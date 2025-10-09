@@ -1,7 +1,7 @@
 # Lidor Zino
 
-**AI & VLSI Engineer** — bridging algorithms and silicon.  
-Fourth-year B.Sc. in Electrical Engineering @ Technion. I design and evaluate ML systems for signals (ECG) and build digital hardware flows (Verilog/DFHDL, verification).
+**Electrical Engineer** — bridging algorithms and silicon.  
+Electrical Engineering Graduate @ Technion. I design and evaluate ML systems for signals (ECG) and build digital hardware flows (Verilog/DFHDL, verification).
 
 - 🔭 **Open to**: Junior roles in **VLSI / Design & Verification / ML for Signals** (Haifa/Tel-Aviv · Hybrid/On-site)
 - 📫 **Email**: ljinoo0@gmail.com
