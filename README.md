@@ -1,48 +1,49 @@
 # Lidor Zino
 
-**Electrical Engineer** — bridging algorithms and silicon.  
-Electrical Engineering Graduate @ Technion. I design and evaluate ML systems for signals (ECG) and build digital hardware flows (Verilog/DFHDL, verification).
+**Electrical Engineer** · autonomous AI agents · ML for medical signals and images  
+System Validation Engineer at **DriveNets** · B.Sc. in Electrical Engineering, **Technion**.  
+I build AI agents that run unattended research loops overnight, and I apply deep learning to medical signals and images.
 
-- 🔭 **Open to**: Junior roles in **VLSI / Design & Verification / ML for Signals** (Haifa/Tel-Aviv · Hybrid/On-site)
 - 📫 **Email**: ljinoo0@gmail.com
+- 💼 **LinkedIn**: [linkedin.com/in/lidorzino](https://www.linkedin.com/in/lidorzino)
 
 ---
 
 ## Selected Work
 
-- **CardioSense — ECG Arrhythmia Detection (3 models)**  
-  Benchmarked **Transformer**, **Transformer+TCN**, and **Transformer+TCN+BiLSTM** with attention pooling and a per-feature softmax fusion gate.  
-  **Results**: test accuracy up to **99.8%** on ECG5000; tri-branch shows strongest validation PR-AUC.  
-  _Role_: modeling, training pipeline, evaluation & calibration.  
-  _Collaborator_: Matan Ashuach.  
-  ▶️ Repo/report: add link here when public.
+- **Autonomous Research Agent: Two-Deletion-Correcting Codes** · [repo](https://github.com/LZguy/two-deletion-code-16)  
+  An unattended overnight agent (Claude Code) with a task spec, persistent state, a research journal and a human-escalation channel. The agent built a numba local search and an exact large-neighbourhood search (HiGHS MILP), run as a parallel portfolio.  
+  **Result**: a 219-codeword two-deletion-correcting code of length 16, **#1 on the EinsteinArena leaderboard** (previous record 218; literature value 215). Every candidate is checked by two independent verifiers.
+
+- **SonoVision: Fetal Ultrasound Plane Classification** (Technion SIPL)  
+  Swin Transformer classifier for 6 fetal planes, with a 5-fold ensemble, MixUp/CutMix and focal loss.  
+  **Results**: **95.45%** test accuracy (**96.28%** balanced). **Thomas Schwartz Award**; paper submitted to **ISBI 2027**.  
+  _Collaborator_: Matan Ashuach.
+
+- **CardioSense: ECG Arrhythmia Detection (3 models)** · [repo](https://github.com/MatanAshuach/CardioSense)  
+  Benchmarked **Transformer**, **Transformer+TCN** and **Transformer+TCN+BiLSTM** with attention pooling and a per-feature softmax fusion gate.  
+  **Results**: test accuracy up to **99.8%** on ECG5000; the tri-branch model shows the strongest validation PR-AUC.  
+  _Role_: modeling, training pipeline, evaluation and calibration. _Collaborator_: Matan Ashuach.
 
 - **Verilog → DFHDL Translator (prototype)**  
-  Translator from synthesizable Verilog to higher-level **DFHDL** via **Parsing → IR → Codegen** with careful handling of signal typing and slicing.  
-  _Role_: core design & implementation.  
-  ▶️ Demo/repo: add link here when available.
+  Translator from synthesizable Verilog to higher-level **DFHDL** (parsing → IR → codegen), with an LLM-automated flow (OpenAI API) and formal equivalence checks in EQY.
 
-- **SAT-based Gate-Level Equivalence Checking**  
-  Integrated **MiniSat**, generated CNF from Verilog netlists, and verified gate-level equivalence, incl. VDD/VSS logic reductions.  
-  _Role_: solver integration, CNF generation, test harness.
-
-- **Booth Multiplier in DFHDL**  
-  Parametric `jboothMultiplier` implementation, fixed tuple slicing/typing issues, verified with testbenches.  
-  _Role_: design & validation.
+- **Earlier hardware work**: SAT-based gate-level equivalence checking (MiniSat, CNF from Verilog netlists); a parametric Booth multiplier in DFHDL, verified with testbenches.
 
 ---
 
 ## Skills
 
-**Languages**: Python, C/C++, Verilog, (DF)HDL, VHDL  
-**ML/DS**: PyTorch, NumPy/SciPy, scikit-learn, matplotlib  
-**Hardware & EDA**: Digital design, testbenches, Minisat, timing/verification basics  
+**ML / DL**: PyTorch, NumPy/SciPy, scikit-learn, pandas, matplotlib  
+**Agents & LLMs**: Claude Code (unattended multi-session agents), OpenAI API  
+**Languages**: Python, C/C++, Verilog/SystemVerilog, (DF)HDL, VHDL  
+**Hardware & lab**: digital design and verification, power validation, lab automation (VISA/SCPI)  
 **Tools**: Linux, Git/GitHub, VS Code, Jupyter
 
 ---
 
 ## What I enjoy
-- Bringing ML to real-world signals (ECG, DSP)
-- Clean, reproducible training/eval pipelines
-- Hardware–software co-design and tooling for digital design
 
+- Giving AI agents hard, open problems, and verifying what comes back
+- Bringing ML to real-world medical signals and images
+- Hardware–software co-design
